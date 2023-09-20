@@ -1,0 +1,14 @@
+@use '../../variables.scss' as *;
+
+.topbar-container {
+  background: linear-gradient(to right,$bg-color-1, rgba(0,0,0,0));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-image {
+  height: 2.5em;
+  width: auto;
+  padding-left: 1em;
+}

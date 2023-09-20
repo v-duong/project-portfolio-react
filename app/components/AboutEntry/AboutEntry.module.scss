@@ -1,0 +1,25 @@
+@use '../../variables.scss' as *;
+
+.about-item-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $glass-color-1;
+    padding: 1rem 5rem;
+    margin: 1rem;
+    border-radius: 2rem;
+
+    .about-image {
+        width: 10em;
+        height: 15em;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-reverse {
+        @extend .about-item-container;
+        flex-direction: row-reverse;
+    }
+}

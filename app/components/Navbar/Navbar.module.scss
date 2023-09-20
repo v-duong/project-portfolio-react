@@ -1,0 +1,13 @@
+@use '../../variables.scss' as *;
+
+.navbar-container {
+  background: linear-gradient(to right,$bg-color-1, rgba(0,0,0,0));
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-image {
+  height: 6em;
+  width: 6em;
+  padding-left: 1em;
+}

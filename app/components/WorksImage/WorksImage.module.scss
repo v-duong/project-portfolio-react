@@ -1,0 +1,16 @@
+@use '../../variables.scss' as *;
+
+.photo-image-container {
+    position: absolute;
+    background-color: white;
+    filter:drop-shadow(15px 15px 1px rgba(43, 43, 43,0.5));
+
+    .image {
+        background-color: rgb(43, 43, 43);
+        height: 60%;
+        width: 80%;
+        margin:auto;
+        margin-top:5%;
+        
+    }
+}
