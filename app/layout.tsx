@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={styles.body}>
         <Topbar />
-        {children}
+        <main className={styles.main}>
+          {children}
+        </main>
       </body>
     </html>
   )

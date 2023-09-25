@@ -3,5 +3,52 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem 20rem;
 }
+
+.main-banner-container {
+  display: inline-flex;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  justify-content: center;
+}
+
+.banner-image {
+   height: 30em;
+   width: 30em;
+   position: relative;
+
+   .image {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+   }
+
+   .box-decoration {
+    position: absolute;
+    outline: 2px rgba(255,255,255,0.5) solid;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+  }
+}
+
+.banner-text {
+  display: inline-flex;
+  flex-direction: column;
+  flex-basis: min-content;
+  text-align: end;
+  align-items: flex-end;
+  padding-right: 5em;
+
+  h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+
+  p {
+    width: 15em;
+  }
+}
+

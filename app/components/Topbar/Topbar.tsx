@@ -6,10 +6,14 @@ import TopbarItem from './TopbarItem/TopbarItem'
 export default function Topbar() {
     return (
         <div className={styles['topbar-container']}>
-            <a href="/"><Image className={styles['logo-image']} src={logo} alt="Logo"/></a>
-            <TopbarItem content="Works" />
-            <TopbarItem content="About" />
-            <TopbarItem content="Contact" />
+            <a href="/" className={styles['logo-container']}>
+                <Image className={styles['logo-image']} src={logo} alt="Logo"/>
+            </a>
+            <div className={styles['nav-container']}>
+                <TopbarItem content="Works" />
+                <TopbarItem content="About" />
+                <TopbarItem content="Contact" />
+            </div>
         </div>
     );
 }
